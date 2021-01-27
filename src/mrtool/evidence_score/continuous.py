@@ -63,7 +63,7 @@ class ContinuousScorelator:
 
         self.detect_pub_bias()
 
-        self.score, self.inner_draws, self.outer_draws = self.get_score(self.linear_model)
+        self.score, self.inner_draws, self.outer_draws = self.get_score(self.final_model)
 
         if self.has_pub_bias():
             self.adjust_pub_bias()
